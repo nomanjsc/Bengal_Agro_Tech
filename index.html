@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengal Agro-Tech - The Home of Premium Mangoes</title>
+
+    <!-- Favicon / PWA meta (place these files in your project root or update paths) -->
+    <link rel="icon" href="bl.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="bl.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="bl.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="bl.png">
+    <link rel="manifest" href="bl.png">
+    <link rel="mask-icon" href="bl.png" color="#f97316">
+    <meta name="msapplication-TileColor" content="#1f2937">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-orange': '#f97316', // orange-600
+                        'brand-dark': '#1f2937', // gray-800
+                        'brand-light': '#ffffff', // white
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Small helper for smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-sans bg-brand-light text-gray-800">
+
+    <!-- Header & Navigation --><header class="bg-brand-light shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="font-poppins font-bold text-2xl text-brand-orange">
+                Bengal Agro-Tech
+            </a>
+            
+            <!-- Mobile Menu Button --><button id="mobile-menu-btn" class="md:hidden text-brand-dark">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+
+            <!-- Desktop Menu --><ul class="hidden md:flex space-x-6 items-center">
+                <li><a href="#home" class="text-gray-600 hover:text-brand-orange font-medium">Home</a></li>
+                <li><a href="#about" class="text-gray-600 hover:text-brand-orange font-medium">About</a></li>
+                <li><a href="#products" class="text-gray-600 hover:text-brand-orange font-medium">Products</a></li>
+                <li><a href="#reviews" class="text-gray-600 hover:text-brand-orange font-medium">Reviews</a></li>
+                <li><a href="#contact" class="bg-brand-orange text-white px-5 py-2 rounded-full font-medium hover:bg-orange-700 transition duration-300">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Menu (Hidden by default) --><div id="mobile-menu" class="hidden md:hidden bg-brand-light shadow-lg">
+            <a href="#home" class="block px-6 py-3 text-gray-600 hover:bg-gray-50">Home</a>
+            <a href="#about" class="block px-6 py-3 text-gray-600 hover:bg-gray-50">About</a>
+            <a href="#products" class="block px-6 py-3 text-gray-600 hover:bg-gray-50">Products</a>
+            <a href="#reviews" class="block px-6 py-3 text-gray-600 hover:bg-gray-50">Reviews</a>
+            <a href="#contact" class="block px-6 py-3 text-gray-600 hover:bg-gray-50">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section --><section id="home" class="relative h-[70vh] min-h-[500px] flex items-center justify-center text-white text-center px-6" style="background-color: #222;">
+            <img src="https://placehold.co/1600x900/FF8C00/FFFFFF?text=Fresh+Mangoes+Harvest" 
+                 alt="Fresh Mangoes Harvest" 
+                 class="absolute inset-0 w-full h-full object-cover opacity-60"
+                 onerror="this.src='https://placehold.co/1600x900/FF8C00/FFFFFF?text=Fresh+Mangoes+Harvest'">
+            
+            <div class="absolute inset-0 bg-brand-dark opacity-30"></div>
+            
+            <div class="relative z-10">
+                <h1 class="font-poppins font-bold text-4xl md:text-6xl mb-4 leading-tight">Taste the Sunshine. Pure Mango Bliss.</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Bengal Agro-Tech brings you the finest, sustainably grown mangoes and delightful mango products, directly from our farms to your table.</p>
+                <a href="#products" class="bg-brand-orange text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-orange-700 transition duration-300">Explore Our Mangoes</a>
+            </div>
+        </section>
+
+        <!-- About Us Section --><section id="about" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span class="text-brand-orange font-semibold">Our Story</span>
+                        <h2 class="font-poppins font-bold text-3xl md:text-4xl mt-2 mb-6 text-brand-dark">From Our Orchards to Your Home</h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            At Bengal Agro-Tech, we are passionate about mangoes. Nestled in the fertile lands of Bangladesh, our orchards are home to some of the most exquisite mango varieties. We combine traditional farming wisdom with modern agricultural practices to cultivate mangoes that are bursting with flavor and natural goodness.
+                        </p>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Our commitment extends beyond just growing. We meticulously process and package our mangoes and mango products to ensure they reach you in perfect condition, retaining their freshness and authentic taste. Experience the true essence of tropical delight with every bite.
+                        </p>
+                        <a href="#contact" class="text-brand-orange font-medium hover:text-orange-700 transition duration-300">Contact Us to Learn More &rarr;</a>
+                    </div>
+                    <div>
+                        <img src="bg.png" 
+                             alt="Bengal Agro-Tech Mango Orchard" 
+                             class="rounded-lg shadow-xl w-full h-auto object-cover"
+                             onerror="this.src='https://placehold.co/600x400/FFA500/FFFFFF?text=Mango+Orchard'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section - Mango Focus --><section id="products" class="py-20 bg-brand-light">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <span class="text-brand-orange font-semibold">Our Delicious Offerings</span>
+                    <h2 class="font-poppins font-bold text-3xl md:text-4xl mt-2 text-brand-dark">Savor the Sweetness of Our Mango Products</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Discover our range of fresh mangoes and premium mango-based delights.</p>
+                </div>
+                
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Product Card 1: Fresh Mangoes --><div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="1.jpg" 
+                             alt="Premium Fresh Mangoes" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src='https://placehold.co/600x400/FFBF00/FFFFFF?text=Fresh+Mangoes'">
+                        <div class="p-6">
+                            <h3 class="font-poppins font-semibold text-xl text-brand-dark mb-2">Premium Fresh Mangoes</h3>
+                            <p class="text-gray-600 text-sm">Hand-picked at peak ripeness, juicy, sweet, and aromatic. Available seasonally.</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 2: Mango Pulp --><div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="2.jpg" 
+                             alt="Pure Mango Pulp" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src='https://placehold.co/600x400/FFD700/FFFFFF?text=Mango+Pulp'">
+                        <div class="p-6">
+                            <h3 class="font-poppins font-semibold text-xl text-brand-dark mb-2">100% Pure Mango Pulp</h3>
+                            <p class="text-gray-600 text-sm">Finest quality mango pulp, perfect for desserts, smoothies, and beverages. No added preservatives.</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 3: Dried Mango Slices --><div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="3.png" 
+                             alt="Delicious Dried Mango Slices" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src='https://placehold.co/600x400/FFBF00/FFFFFF?text=Dried+Mango'">
+                        <div class="p-6">
+                            <h3 class="font-poppins font-semibold text-xl text-brand-dark mb-2">Delicious Dried Mango Slices</h3>
+                            <p class="text-gray-600 text-sm">Naturally sweet and chewy, a healthy snack for any time of day.</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 4: Mango Jam --><div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="5.jpg" 
+                             alt="Artisanal Mango Jam" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src='https://placehold.co/600x400/FFD700/FFFFFF?text=Mango+Jam'">
+                        <div class="p-6">
+                            <h3 class="font-poppins font-semibold text-xl text-brand-dark mb-2">Artisanal Mango Jam</h3>
+                            <p class="text-gray-600 text-sm">Homemade style mango jam, perfect for breakfast toasts or as a dessert topping.</p>
+                        </div>
+                    </div>
+                     <!-- Product Card 5: Mango Pickle --><div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="4.jpg" 
+                             alt="Spicy Mango Pickle" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src='https://placehold.co/600x400/FFBF00/FFFFFF?text=Mango+Pickle'">
+                        <div class="p-6">
+                            <h3 class="font-poppins font-semibold text-xl text-brand-dark mb-2">Spicy Mango Pickle</h3>
+                            <p class="text-gray-600 text-sm">A traditional favorite with a tangy and spicy kick, made with green mangoes.</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 6: Mango Nectar/Juice --><div class="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="6.png" 
+                             alt="Refreshing Mango Nectar" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src='https://placehold.co/600x400/FFD700/FFFFFF?text=Mango+Juice'">
+                        <div class="p-6">
+                            <h3 class="font-poppins font-semibold text-xl text-brand-dark mb-2">Refreshing Mango Nectar</h3>
+                            <p class="text-gray-600 text-sm">Quench your thirst with our delicious and natural mango nectar, made from real mangoes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Reviews Section --><section id="reviews" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <span class="text-brand-orange font-semibold">What Our Customers Say</span>
+                    <h2 class="font-poppins font-bold text-3xl md:text-4xl mt-2 text-brand-dark">Loved by Mango Enthusiasts Worldwide</h2>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Review 1 --><div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <p class="text-gray-700 italic mb-4">"The fresh mangoes from Bengal Agro-Tech are simply divine! The sweetest and juiciest I've ever tasted. Highly recommend!"</p>
+                        <p class="font-semibold text-brand-dark">- Aisha K., Dhaka</p>
+                    </div>
+                    <!-- Review 2 --><div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <p class="text-gray-700 italic mb-4">"Their mango pulp made my homemade ice cream an absolute hit. The quality is consistently excellent, and the flavor is unbeatable."</p>
+                        <p class="font-semibold text-brand-dark">- Robert L., London</p>
+                    </div>
+                    <!-- Review 3 --><div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <p class="text-gray-700 italic mb-4">"I'm addicted to their dried mango slices! A perfect healthy snack that satisfies my sweet tooth without any guilt. A staple in my pantry now."</p>
+                        <p class="font-semibold text-brand-dark">- Chen W., Singapore</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section --><section id="contact" class="py-20 bg-brand-dark text-white">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <span class="text-orange-300 font-semibold">Connect With Us</span>
+                        <h2 class="font-poppins font-bold text-3xl md:text-4xl mt-2 mb-6">Reach Out for Delicious Details</h2>
+                        <p class="text-gray-300 mb-8 leading-relaxed">
+                            Have questions about our mango products, bulk orders, or want to share your feedback? We'd love to hear from you! Fill out the form or use the contact details below.
+                        </p>
+                        <div class="space-y-4">
+                            <p class="flex items-center text-gray-300">
+                                <svg class="w-5 h-5 mr-3 text-orange-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                Dhaka, Bangladesh OR
+                                Busan, South Korea
+                            </p>
+                            <p class="flex items-center text-gray-300"></p>
+                                <svg class="w-5 h-5 mr-3 text-orange-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                nomanjsc@ks.ac.kr
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form --><form id="contactForm" class="bg-brand-light p-8 rounded-lg shadow-xl text-gray-800">
+                        <div class="mb-5">
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-brand-orange focus:border-brand-orange" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-brand-orange focus:border-brand-orange" placeholder="you@example.com" required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-brand-orange focus:border-brand-orange" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-orange text-white px-6 py-3 rounded-lg font-bold text-lg hover:bg-orange-700 transition duration-300">
+                            Send Message
+                        </button>
+                        <p id="form-status" class="text-sm mt-4 text-center"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer --><footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-poppins font-semibold text-xl text-white mb-4">Bengal Agro-Tech</h3>
+                    <p class="text-sm">Bringing the best of Bangladeshi mangoes to the world, sustainably.</p>
+                </div>
+                <div>
+                    <h4 class="font-poppins font-semibold text-lg text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#about" class="hover:text-white">About Us</a></li>
+                        <li><a href="#products" class="hover:text-white">Products</a></li>
+                        <li><a href="#reviews" class="hover:text-white">Reviews</a></li>
+                        <li><a href="#contact" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-poppins font-semibold text-lg text-white mb-4">Contact Info</h4>
+                    <p class="text-sm">Dhaka, Bangladesh</p>
+                    <p class="text-sm hover:text-white">nomanjsc@ks.ac.kr</p>
+                    <!-- Social media icons can be added here --></div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8 text-center">
+                <p class="text-sm">&copy; <span id="current-year"></span> Bengal Agro-Tech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Simple Contact Form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var formStatus = document.getElementById('form-status');
+            formStatus.textContent = 'Thank you! Your message has been sent.';
+            formStatus.className = 'text-sm mt-4 text-center text-brand-orange';
+            
+            // Clear form (for demo purposes)
+            e.target.reset();
+
+            // Hide status message after 3 seconds
+            setTimeout(function() {
+                formStatus.textContent = '';
+                formStatus.className = 'text-sm mt-4 text-center';
+            }, 3000);
+        });
+    </script>
+
+</body>
+</html>
